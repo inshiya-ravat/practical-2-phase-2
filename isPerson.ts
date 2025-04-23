@@ -1,7 +1,6 @@
 type Person = {
     name:string,
     age:number,
-    city:string
 }
 function isPerson(myObj): myObj is Person{
     return (
@@ -9,10 +8,9 @@ function isPerson(myObj): myObj is Person{
     )
 }
 
-const person = "hfu"
-console.log(isPerson(person))
-// if (isPerson(person)) {
-//     person
-//   // Now TypeScript knows `person` is `{ name: string; age: number }`
-// }
+const person = {name:"inshiya", age: 21}
+if (isPerson(person)) {
+    person
+  // Now TypeScript knows `person` is `{ name: string; age: number }`
+}
 
